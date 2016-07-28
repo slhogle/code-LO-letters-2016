@@ -6,31 +6,31 @@ Scripts for reproducing analysis are found in the scripts folder. Metadata is lo
 
 # Required Software
 ## NCBI SRA Toolkit v2.7.0
-[Download](https://github.com/ncbi/sra-tools/wiki/Downloads)
-[Manual](http://ncbi.github.io/sra-tools/)
-Must add SRA Toolkit/bin folder to path
+[Download](https://github.com/ncbi/sra-tools/wiki/Downloads)  
+[Manual](http://ncbi.github.io/sra-tools/)  
+Must add SRA Toolkit/bin folder to path  
 
 ## USEARCH v8.1.1861
-[Download](http://www.drive5.com/usearch/download.html)
-[Manual](http://www.drive5.com/usearch/manual/)
-Must add usearch6.1.1861... executable to path
+[Download](http://www.drive5.com/usearch/download.html)  
+[Manual](http://www.drive5.com/usearch/manual/)  
+Must add usearch6.1.1861... executable to path  
 
 ## RDP classifier v2.12
-[Download](https://sourceforge.net/projects/rdp-classifier/files/rdp-classifier/)
-[Manual](https://github.com/rdpstaff/classifier)
-Must add classifier Jar file to path
+[Download](https://sourceforge.net/projects/rdp-classifier/files/rdp-classifier/)  
+[Manual](https://github.com/rdpstaff/classifier)  
+Must add classifier Jar file to path  
 
 ## R v3.3.0
-[Download](https://www.r-project.org/)
-[Manual](https://cran.r-project.org/manuals.html)
+[Download](https://www.r-project.org/)  
+[Manual](https://cran.r-project.org/manuals.html)  
 
 ## R Libraries
-phyloseq
-ggplot2
-reshape2
-grid
-vegan
-DESeq2
+phyloseq  
+ggplot2  
+reshape2  
+grid  
+vegan  
+DESeq2  
 
 # How to reproduce analysis...
 After installing the above software and adding it to your path run the scripts in the following order
@@ -44,11 +44,11 @@ R diff_abundance.R
 R ordination
 ```
 
-The sequence_processing.sh script should create a directory hierarchy for the project that is self explanatory. It will also connect remotely to the NCBI SRA to download the sequecing data. For the sake of completeness, you can find the links to the NCBI SRA here:
-[Bioproject](http://www.ncbi.nlm.nih.gov/bioproject/PRJNA331054)
-[DNA07](http://www.ncbi.nlm.nih.gov/sra/SRX1973167)
-[DNA08](http://www.ncbi.nlm.nih.gov/sra/SRX1973168)
-[DNA09](http://www.ncbi.nlm.nih.gov/sra/SRX1973169)
-[DNA10](http://www.ncbi.nlm.nih.gov/sra/SRX1973170)
-[DNA11](http://www.ncbi.nlm.nih.gov/sra/SRX1973171)
-[DNA12](http://www.ncbi.nlm.nih.gov/sra/SRX1973172)
+The sequence_processing.sh script should create a directory hierarchy for the project that is self explanatory. It will also connect remotely to the NCBI SRA to download the sequecing data. For the sake of completeness, you can find the links to the NCBI SRA here:  
+[Bioproject](http://www.ncbi.nlm.nih.gov/bioproject/PRJNA331054)  
+[DNA07](http://www.ncbi.nlm.nih.gov/sra/SRX1973167)  
+[DNA08](http://www.ncbi.nlm.nih.gov/sra/SRX1973168)  
+[DNA09](http://www.ncbi.nlm.nih.gov/sra/SRX1973169)  
+[DNA10](http://www.ncbi.nlm.nih.gov/sra/SRX1973170)  
+[DNA11](http://www.ncbi.nlm.nih.gov/sra/SRX1973171)  
+[DNA12](http://www.ncbi.nlm.nih.gov/sra/SRX1973172)  
