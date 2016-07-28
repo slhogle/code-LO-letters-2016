@@ -1,9 +1,9 @@
 # Introduction
 Scripts for reproducing analyses from Hogle et al. L&amp;O Letters. This project investigated the production of different classes of iron-binding ligands, iron concentrations, macronutrient concentrations, and phytoplankton and bacterioplankton assemblage composition in iron amended microcosm incubations conducted in oligotrophic waters collected off the Southern California Bight.
---------
+
 # Data and Code
 Scripts for reproducing analysis are found in the scripts folder. Metadata is located in the metadata folder. These files are needed to follow the analysis in the shell and R scripts.
---------
+
 # Required Software
 ## NCBI SRA Toolkit v2.7.0
 * [Download](https://github.com/ncbi/sra-tools/wiki/Downloads)  
@@ -31,7 +31,7 @@ Scripts for reproducing analysis are found in the scripts folder. Metadata is lo
 * grid  
 * vegan  
 * DESeq2  
---------
+
 # How to reproduce analysis...
 After installing the above software and adding it to your path run the scripts in the following order
 
@@ -42,6 +42,7 @@ R richness.R
 R bar_plots.R
 R diff_abundance.R
 R ordination
+```
 
 All scripts are heavily documented so open them in a text editor (or R studio) to see what is really going on  
   
