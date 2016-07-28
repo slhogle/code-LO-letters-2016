@@ -2,7 +2,7 @@
 Scripts for reproducing analyses from Hogle et al. L&amp;O Letters. This project investigated the production of different classes of iron-binding ligands, iron concentrations, macronutrient concentrations, and phytoplankton and bacterioplankton assemblage composition in iron amended microcosm incubations conducted in oligotrophic waters collected off the Southern California Bight.
 
 # Data and Code
-Scripts for reproducing analysis are found in the scripts folder. Metadata is located in the metadata folder. These files are needed to follow the analysis in the shell and R scripts.
+Scripts for reproducing the bacterial OTU analyses are found in the scripts folder and metadata is located in the metadata folder. These files are also hosted at a [Figshare repository](https://dx.doi.org/10.6084/m9.figshare.3184534.v1)  
 
 # Required Software
 ## NCBI SRA Toolkit v2.7.0
@@ -41,12 +41,12 @@ R preprocessing.R
 R richness.R
 R bar_plots.R
 R diff_abundance.R
-R ordination
+R ordination.R
 ```
 
-All scripts are heavily documented so open them in a text editor (or R studio) to see what is really going on  
+All scripts are heavily documented so open them in a text editor (or R studio) to see what is really going on. I would recommend using Rstudio so that you can perform each step interactively.  
   
-The sequence_processing.sh script should create a directory hierarchy for the project that is self explanatory. It will also connect remotely to the NCBI SRA to download the sequecing data. For the sake of completeness, you can find the links to the NCBI SRA here:  
+The sequence_processing.sh script should create a directory hierarchy for the project that is self explanatory. It will also connect remotely to the NCBI SRA to download the sequecing data. For the sake of completeness, you can find the links to the NCBI SRA below:  
   
 * [Bioproject](http://www.ncbi.nlm.nih.gov/bioproject/PRJNA331054)  
 * [DNA07](http://www.ncbi.nlm.nih.gov/sra/SRX1973167)  
