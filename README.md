@@ -1,0 +1,2 @@
+# code-LO-letters-2016
+Scripts for reproducing analyses from Hogle et al. L&amp;O Letters. This project investigated the production of different classes of iron-binding ligands, iron concentrations, macronutrient concentrations, and phytoplankton and bacterioplankton assemblage composition in iron amended microcosm incubations conducted in oligotrophic waters collected off the Southern California Bight.
