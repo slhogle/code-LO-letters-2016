@@ -134,10 +134,10 @@ merged.class.plot.red$Class <- NULL
 
 ## Change the dataframe so it's in relative abundance
 merged.class.plot.red.rel <- merged.class.plot.red/colSums(merged.class.plot.red)
-colnames(merged.class.plot.red.rel)[7] <- "Class"
+colnames(merged.class.plot.red.rel)[6] <- "Class"
 
 ## make a column that is the same as the rownames (for reshaping)
-merged.class.plot.red.rel[,7] <- rownames(merged.class.plot.red.rel)
+merged.class.plot.red.rel[,6] <- rownames(merged.class.plot.red.rel)
 
 ## Now we’ll put df into long format and select id.vars as “Class” using the 
 ## reshape package
