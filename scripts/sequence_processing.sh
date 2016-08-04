@@ -157,10 +157,11 @@ for i in "${arr[@]}"; do sed -e "s/ /_/g" ${counts}/"$i"_otutab.txt > ${counts}/
 ## -o auto means to create as many entries as in the first line (filles missing entries)
 join --header -a1 -a2 -e 0 -o auto <(sort -k1,1 ${counts}/DNA07_format.txt) <(sort -k1,1 ${counts}/DNA08_format.txt) > ${counts}/tmp.tmp
 
-for f in DNA09_format.txt DNA10_format.txt DNA11_format.txt DNA12_format.txt 
+for f in DNA09_format.txt DNA10_format.txt DNA11_format.txt DNA12_format.txt
 do                              
-    join --header -a1 -a2 -e 0 -o auto <(sort -k1,1 ${counts}/tmp.tmp) <(sort -k1,1 ${counts}/$f) > tmpf           
-    mv tmpf tmp.tmp                  
+    join --header -a1 -a2 -e 0 -o auto <(sort -k1,1 ${counts}/tmp.tmp) <(sort -k1,1 ${counts}/$f) > ${counts}/tmpf           
+    rm ${counts}/tmp.tmp
+    mv ${counts}/tmpf ${counts}/tmp.tmp                  
 done
 
 ## ensures the header is at the first line
@@ -183,7 +184,11 @@ cut -f1,3,6,9,12,15,18 ${tax}/combined_overlapped_samples_derep_OTUs_classified.
 sed -e "s/\"//g" ${tax}/tmp > ${tax}/tmp1
 
 ## add header line
-sed '1 i\OTU"\t"Domain"\t"Phylum"\t"Class"\t"Order"\t"Family"\t"Genus' ${tax}/tmp1 > ${tax}/phyloseq_tax_table.txt
+sed '1 i\OTU\tDomain\tPhylum\tClass\tOrder\tFamily\tGenus' ${tax}/tmp1 > ${tax}/phyloseq_tax_table.txt
 
 ## copy to R script processing directory
 cp ${tax}/phyloseq_tax_table.txt ${base}/data_processing
+
+## Cleanup
+rm ${tax}/tmp
+rm ${tax}/tmp1
